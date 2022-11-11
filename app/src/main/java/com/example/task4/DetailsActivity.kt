@@ -1,6 +1,7 @@
 package com.example.task4
 
 import android.content.Intent
+import android.graphics.Color
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -27,25 +28,23 @@ class DetailsActivity : AppCompatActivity() {
 
 
 
-        var callbtn : Button?
+        val btn2d : Button?
 
-        callbtn = findViewById(R.id.btn2d)
-        val callno: Long
+        val btn3d : Button?
 
-        callno = 7907965884
+        btn2d = findViewById(R.id.btn2d)
+        btn3d = findViewById(R.id.btn3d)
+        btn2d.setOnClickListener {
+            btn2d.setBackgroundColor(Color.BLACK)
+            btn3d.setBackgroundColor(Color.DKGRAY)
 
-        callbtn.setOnClickListener {
-            // getting phone number from edit text and changing it to String
-            val phone_number = callno.toString()
 
-            // Getting instance of Intent with action as ACTION_CALL
-            val phone_intent = Intent(Intent.ACTION_DIAL)
+        }
+        btn3d.setOnClickListener {
+            btn3d.setBackgroundColor(Color.BLACK)
+            btn2d.setBackgroundColor(Color.DKGRAY)
 
-            // Set data of Intent through Uri by parsing phone number
-            phone_intent.data = Uri.parse("tel:$phone_number")
 
-            // start Intent
-            startActivity(phone_intent)
         }
 
 

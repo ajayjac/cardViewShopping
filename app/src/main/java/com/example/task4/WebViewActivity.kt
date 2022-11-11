@@ -1,16 +1,26 @@
 package com.example.task4
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import android.widget.Button
 
 class WebViewActivity : AppCompatActivity() {
     lateinit var webView : WebView
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_web_view)
+
+        val back_btn_web: Button = findViewById(R.id.back_btn_web)
+
+        back_btn_web.setOnClickListener {
+            val i = Intent(this, DetailsActivity::class.java)
+            startActivity(i)
+        }
 
         webView = findViewById(R.id.web1)
 
@@ -26,6 +36,9 @@ class WebViewActivity : AppCompatActivity() {
 
         // if you want to enable zoom feature
         webView.settings.setSupportZoom(true)
+
+
+
     }
 
     // if you press Back button this code will work

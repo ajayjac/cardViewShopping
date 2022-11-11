@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                 ItemsViewModel(
                     R.drawable.hotel,
                     "CB-000-2343",
-                    "1000",
+                    "RS 9900 ",
                     "Ernakulam",
                     50,
                     90,
