@@ -13,13 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class CustomAdapter( val mList: List<ItemsViewModel>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
-
-
     val callno: Long = 79079658884
-
-
-
-
 
     // create new views
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -53,6 +47,8 @@ class CustomAdapter( val mList: List<ItemsViewModel>) : RecyclerView.Adapter<Cus
         holder.sqft.text = ItemsViewModel.sqft.toString()
 
         holder.dateval.text = ItemsViewModel.dateval
+
+
         holder.cardview.setOnClickListener(View.OnClickListener {
             val context= holder.cardview.context
             val intent = Intent(context, DetailsActivity::class.java)

@@ -12,7 +12,7 @@
         android:id="@+id/imageSlider"
         android:layout_width="match_parent"
         android:layout_height="275dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="68dp"
         app:iss_auto_cycle="true"
         app:iss_corner_radius="5"
         app:iss_delay="0"
@@ -24,33 +24,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back_btn"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/btn2d"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
         android:text="2D Drawing"
-        app:cornerRadius="15dp"
-        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageSlider">
 
-    </com.google.android.material.button.MaterialButton>
+    </Button>
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/btn3d"
         android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="50dp"
-        app:cornerRadius="15dp"
+        android:layout_marginEnd="40dp"
         android:text="3D Drawing"
-        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageSlider"></com.google.android.material.button.MaterialButton>
+        app:layout_constraintTop_toBottomOf="@+id/imageSlider"></Button>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -224,7 +221,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="32dp"
-        android:outlineSpotShadowColor="@color/teal_200"
         app:icon="@android:drawable/ic_menu_share"
         app:iconGravity="end"
         app:layout_constraintEnd_toEndOf="parent"

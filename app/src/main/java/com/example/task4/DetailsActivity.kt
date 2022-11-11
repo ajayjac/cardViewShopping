@@ -35,13 +35,13 @@ class DetailsActivity : AppCompatActivity() {
         btn2d = findViewById(R.id.btn2d)
         btn3d = findViewById(R.id.btn3d)
         btn2d.setOnClickListener {
-            btn2d.setBackgroundColor(Color.BLACK)
+            btn2d.setBackgroundColor(Color.BLUE)
             btn3d.setBackgroundColor(Color.DKGRAY)
 
 
         }
         btn3d.setOnClickListener {
-            btn3d.setBackgroundColor(Color.BLACK)
+            btn3d.setBackgroundColor(Color.BLUE)
             btn2d.setBackgroundColor(Color.DKGRAY)
 
 

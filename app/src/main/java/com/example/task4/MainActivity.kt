@@ -19,14 +19,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        /*//checkbox
-        var cbHeart: CheckBox
-        cbHeart = findViewById(R.id.checkBox)*/
-//        val callbtn: Button
-//
-
-
-
         // getting the recyclerview by its id
         recyclerView = findViewById(R.id.recyclerview1)
 
